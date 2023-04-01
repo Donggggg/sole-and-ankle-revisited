@@ -41,7 +41,7 @@ const Header = () => {
                   <Icon id='search'/>
                   <VisuallyHidden>Search</VisuallyHidden>
               </UnstyledButton>
-              <UnstyledButton>
+              <UnstyledButton onClick={() => setShowMobileMenu(true)}>
                   <Icon id='menu'/>
                   <VisuallyHidden>Open Menu</VisuallyHidden>
               </UnstyledButton>
@@ -68,7 +68,7 @@ const MainHeader = styled.div`
     align-items: center;
     border-top: 4px solid ${COLORS.gray[900]};
   }
-  
+
   @media ${QUERIES.phoneAndSmaller} {
     padding-left: 16px;
     padding-right: 16px;
